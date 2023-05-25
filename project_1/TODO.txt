@@ -1,7 +1,6 @@
 TestMe:
 
 Pre processamento do dataset (Remover NANs, missing values, etc.)
-Dividir dataset entre Features e Labels;
 Temos que tirar os outliers (disse o prof);
 
 
