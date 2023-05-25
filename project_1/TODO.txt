@@ -1,0 +1,13 @@
+TestMe:
+
+Pre processamento do dataset (Remover NANs, missing values, etc.)
+Dividir dataset entre Features e Labels;
+Temos que tirar os outliers (disse o prof);
+
+
+project_NN:
+
+Verificar diferença entre teste e validação nos modelos;
+Testar uma RNN (Não deve correr bem);
+
+
