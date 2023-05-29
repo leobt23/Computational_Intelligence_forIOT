@@ -8,6 +8,12 @@ def load_data(filename):
     data = pd.read_csv(filename)
     return data
 
+def preprocess_data(data):
+    data = data.dropna() # Drop rows with missing values
+    data = data.drop_duplicates() # Drop duplicate rows
+    # 
+    return data
+
 def split_data(data):
     X = data.iloc[:, :-1]
     y = data.iloc[:, -1]
@@ -27,6 +33,10 @@ def main():
     # Load data
     data = load_data("Lab6-Proj1_TestSet.csv")
 
+    # Preprocess data
+    data = preprocess_data(data)
+
+    # Split data
     X,y = split_data(data)
 
     # Load model
