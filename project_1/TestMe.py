@@ -47,6 +47,8 @@ def else_prediction(data, model):
 def metric_evaluation(y_test, y_pred):
     # RMSE 
     print("RMSE: ", np.sqrt(mean_squared_error(y_test, y_pred)))
+    # R2
+    print("R2: ", r2_score(y_test, y_pred))
 
 def load_scale_object():
     # Load the scaler object from the file
