@@ -203,7 +203,7 @@ def get_all_suggestions(which_rules, variables_used, CLPVariation_mode_n, dispar
 # Now applying these functions to obtain the suggestions
 
 def main():
-    file_name = 'project_2_fuzzy/Project2_SampleData.csv'#'Lab10-Proj2_TestS.csv'
+    file_name = 'Lab10-Proj2_TestS.csv'
 
     # importing the data
     df = pd.read_csv(file_name)
