@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import random
 from deap import creator, base, tools, algorithms
 
-data = pd.read_excel('project_3_evolution_algorithms\Project3_DistancesMatrix.xlsx', header=None) 
 
-distances = data.values[1:, 1:]  
+distances = pd.read_csv('project_3_evolution_algorithms.csv', header=None)
+
 
 number_of_ecopoints = len(distances) - 1
 
@@ -119,4 +119,3 @@ while time.time() - start_time < timeout and gen < n_generations and not converg
 
 # Best individual
 print(f"Best individual is: {hof[0]}, {len(hof[0])} \nwith fitness: {hof[0].fitness}")
-print(time.time() - start_time)
