@@ -6,9 +6,8 @@ import matplotlib.pyplot as plt
 import random
 from deap import creator, base, tools, algorithms
 
-
+# This path should be changed by the processor. 
 distances = pd.read_csv('project_3_evolution_algorithms.csv', header=None)
-
 
 number_of_ecopoints = len(distances) - 1
 
